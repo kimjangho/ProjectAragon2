@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title> Aragon Project</title>
+		<meta name="description" content="Grid Loading and Hover Effect: Recreating Samsung's grid loading effect" />
+		<meta name="keywords" content="portfolio, l'art, peace, dream" />
+		<meta name="Jamie" content="UI, UX design contents" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+
+
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="nav-top clearfix">
+				<a class="nav-icon nav-icon-prev" href=""><span>(Logo goes here)</span></a>
+				<span class="right"><a class="nav-icon nav-icon-drop" href="http://tympanus.net/codrops/?p=19069"><span>(Date, Weather)</a></span>
+			</div>
+			
+			<header class="aragon-header">
+				<h1> Aragon Project <span> Whole new world <a href="http://design.samsung.com/">Samsung's</a> will change the world</span></h1>	
+				<nav class="aragon-demos">
+					<a1 class="current-demo" href="index.html">Inspirations</a1>
+					<a1 href="index2.html">About</a1>
+					<a1 href="index3.html">Works</a1>
+					<a1 href=" ">Contact</a1>
+				</nav>
+			</header>
+			<section class="grid-wrap">
+				<ul class="grid swipe-rotate" id="grid">
+					<li class="title-box">
+						<h2> Jamie Kim<a href="http://ryotakemasa.com/">Ryo Takemasa</a></h2>
+					</li>
+					<li><a href="#"><img src="img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="about/about.html"><img src="img/dummy.png" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/batterypark.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/boston.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/boston2.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/bostonharbor.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/charles.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/garden.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/geneva.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/genevahouse.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/designawards.jpg" alt="design"><h3>Samsung Galaxy S7</h3></a></li>
+					<li><a href="#"><img src="img/genevaparc.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/harborjam.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/newport.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/newport2.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/river2.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/soccer.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/UN.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/uniqlo.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/vespa.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					<li><a href="#"><img src="img/work.jpg" alt="dummy"><h3>A fantastic title</h3></a></li>
+					
+				</ul>
+			</section>
+			<section class="related">
+				
+			</section>
+		</div><!-- /container -->
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/colorfinder-1.1.js"></script>
+		<script>
+  var rgb = new ColorFinder().getMostProminentColor(document.getElementById('image'));
+  document.getElementById("color").style.backgroundColor = 'rgb('+rgb.r+','+rgb.b+','+rgb.g+')';
+</script>
+		<script src="js/gridScrollFx.js"></script>
+		<script>
+			new GridScrollFx( document.getElementById( 'grid' ), {
+				viewportFactor : 0.4
+			} );
+		</script>
+
+	</body>
+</html>
